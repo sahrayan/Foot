@@ -13,7 +13,9 @@ class Equipe{
         return $this->_nom;
     }
     
-
+    public function addJoueur($nouveauJoueur){
+        $this->_joueur[] = $nouveauJoueur;
+    }
     
 }
 
