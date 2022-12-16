@@ -11,7 +11,7 @@ class Joueur{
         $this->_nom = $nom;
         $this->_prenom = $prenom;
         $this->_age = $age;
-        $this->_nationalite = $nationalite;
+        $this->_nationalite->addJoueur($this);
         $this->_contrat = [];
     }
     public function getContrat(){
@@ -49,8 +49,16 @@ class Joueur{
         return $this;
     }
 
-
-
+    public function addNouveauContrat($nouvEquipe){
+        $this->_contrat[] = $nouvEquipe;
+        return $this;
+    }
+    public function DispContrat(){
+        echo $this->getNom(). " ".$this->getPrenom();
+        foreach($this->_contrat as $contrat){
+            echo "Le joueur ".$contrat->getEquipe()->getNom(). " a un contrat de ".$contrat->getDate()."<br>";
+            
+    }
 
 
 
