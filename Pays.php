@@ -12,6 +12,11 @@ class Pays{
     public function getEquipe(){
     return $this->_equipe;
     }
+
+    public function addPays($nouvPays){
+        $this->_equipe[] = $nouvPays
+    }
+    
     public function addEquipe($equipe){
         $this->_equipe[] = $equipe;
     }
