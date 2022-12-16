@@ -1,5 +1,5 @@
 <?php
-class Role{
+class Pays{
     private string $_nom;
     private array $_equipe;
     public function __construct($nom){
