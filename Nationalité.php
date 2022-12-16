@@ -10,9 +10,17 @@ class Nationalite{
     public function getNom(){
         return $this->_nom;
     }
+    public function setNom(){
+        $this->_nom = $nom;
+    }
+    public function setNationalite(){
+        $this->_nationalite= $nationalite;
+    }
+
     public function addJoueur($nouveauJoueur){
         $this->_joueur[] = $nouveauJoueur;
     }
+
         
 }
 
