@@ -14,7 +14,7 @@ class Pays{
     }
 
     public function addPays($nouvPays){
-        $this->_equipe[] = $nouvPays
+        $this->_equipe[] = $nouvPays;
     }
     
     public function addEquipe($equipe){
