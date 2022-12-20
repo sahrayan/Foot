@@ -12,11 +12,11 @@ class Pays{
     public function getEquipe(){
     return $this->_equipe;
     }
-
+// rajout de l'equipe dans Pays
     public function addPays($nouvPays){
         $this->_equipe[] = $nouvPays;
     }
-    
+    // rajout de l'quipe dans l'quipe
     public function addEquipe($equipe){
         $this->_equipe[] = $equipe;
     }
