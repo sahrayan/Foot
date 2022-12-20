@@ -11,14 +11,16 @@ class Joueur{
         $this->_nom = $nom;
         $this->_prenom = $prenom;
         $this->_age = $age;
+        // rajout de la nationalite dans add joueur
         $this->_nationalite->addJoueur($this);
+        // Creation d'une liste contrat 
         $this->_contrat = [];
-    }
-    public function getContrat(){
-        return $this->_casting;
     }
     public function addContrat($nouveauContrat){
         $this->_contrat[] = $nouveauContrat;
+    }
+    public function getContrat(){
+        return $this->_casting;
     }
     public function getNom(): string{
         return $this->_nom;
@@ -53,6 +55,7 @@ class Joueur{
         $this->_contrat[] = $nouvEquipe;
         return $this;
     }
+    // Permet de montrer la durée d un contrat d'un joueur
     public function DispContrat(){
         echo $this->getNom(). " ".$this->getPrenom();
         foreach($this->_contrat as $contrat){
