@@ -12,7 +12,7 @@ class Joueur{
         $this->_prenom = $prenom;
         $this->_age = $age;
         // rajout de la nationalite dans add joueur
-        $this->_nationalite->addJoueur($this);
+        $this->_nationalite = $nationalite;
         // Creation d'une liste contrat 
         $this->_contrat = [];
     }
@@ -34,22 +34,7 @@ class Joueur{
     public function getNationalite(): string{
         return $this->_nationalite;
     }
-    public function setNom($nom){
-        $this->_nom = $nom ;
-        return $this;
-    }
-    public function setPrenom($prenom){
-        $this->_prenom = $prenom;
-        return $this;
-    }
-    public function setAge($age){
-        $this->_age = $age;
-        return $this;
-    }
-    public function setNationalite( $nationalite){
-        $this->_nationalite = $nationalite;
-        return $this;
-    }
+    
 
     public function addNouveauContrat($nouvEquipe){
         $this->_contrat[] = $nouvEquipe;
@@ -62,6 +47,10 @@ class Joueur{
             echo "Le joueur ".$contrat->getEquipe()->getNom(). " a un contrat de ".$contrat->getDate()."<br>";
             
         }
+    }
+    public function __toString()
+	{
+		return $this->_prenom . " " . $this->_nom . " " . $this->_age . " " . $this->_nationalite ;
     }
 
 
