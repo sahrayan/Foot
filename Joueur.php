@@ -1,9 +1,9 @@
 <?php
 class Joueur{
-    private string $_nom;
-    private string $_prenom;
-    private int $_age;
-    private string $_nationalite;
+    private $_nom;
+    private $_prenom;
+    private $_age;
+    private $_nationalite;
     private array $_contrat;
     
 
@@ -32,19 +32,19 @@ class Joueur{
     public function getNationalite(): string{
         return $this->_nationalite;
     }
-    public function setNom(string $nom){
+    public function setNom($nom){
         $this->_nom = $nom ;
         return $this;
     }
-    public function setPrenom(string $prenom){
+    public function setPrenom($prenom){
         $this->_prenom = $prenom;
         return $this;
     }
-    public function setAge(int $age){
+    public function setAge($age){
         $this->_age = $age;
         return $this;
     }
-    public function setNationalite(string $nationalite){
+    public function setNationalite( $nationalite){
         $this->_nationalite = $nationalite;
         return $this;
     }
@@ -58,8 +58,8 @@ class Joueur{
         foreach($this->_contrat as $contrat){
             echo "Le joueur ".$contrat->getEquipe()->getNom(). " a un contrat de ".$contrat->getDate()."<br>";
             
+        }
     }
-
 
 
 
