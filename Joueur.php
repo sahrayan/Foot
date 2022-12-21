@@ -4,16 +4,20 @@ class Joueur{
     private $_prenom;
     private $_age;
     private $_nationalite;
+    private $_equipe;
     private array $_contrat;
     
 
-    public function __construct(string $nom, string $prenom, int $age, string $nationalite){
+    public function __construct(string $nom, string $prenom, int $age, string $nationalite, string $equipe, string $contrat){
         $this->_nom = $nom;
         $this->_prenom = $prenom;
         $this->_age = $age;
         // rajout de la nationalite dans add joueur
         $this->_nationalite = $nationalite;
         $this->_nationalite = addJoueur($this);
+        // je rajoute le l'equipe a new player
+        $this->_equipe = $equipe;
+        $this->_equipe = addNjoueur($this);
         // Creation d'une liste contrat 
         $this->_contrat = [];
     }
