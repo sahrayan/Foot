@@ -13,11 +13,12 @@ class Joueur{
         $this->_age = $age;
         // rajout de la nationalite dans add joueur
         $this->_nationalite = $nationalite;
+        $this->_nationalite = addJoueur($this);
         // Creation d'une liste contrat 
         $this->_contrat = [];
     }
-    public function addContrat($nouveauContrat){
-        $this->_contrat[] = $nouveauContrat;
+    public function addContrat($contrat){
+        $this->_contrat[] = $contrat;
     }
     public function getContrat(){
         return $this->_casting;
