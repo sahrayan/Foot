@@ -8,7 +8,7 @@ class Joueur{
     private array $_contrat;
     
 
-    public function __construct(string $nom, string $prenom, int $age, string $nationalite, string $equipe, string $contrat){
+    public function __construct( $nom, $prenom, $age, $nationalite, $equipe, $contrat){
         $this->_nom = $nom;
         $this->_prenom = $prenom;
         $this->_age = $age;
