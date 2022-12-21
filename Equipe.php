@@ -14,9 +14,18 @@ class Equipe{
     public function getEquipe(){
         return $this->_equipe;
     }
+
+
     public function addNjoueur($joueur){
         $this->_listJoueur[] = $joueur;
     }
+
+
+    public function addContrat($contrat){
+        $this->_contrat[] = $contrat;
+    }
+
+
     public function dispEquipe(){
         $result = "Les joueurs de l'équipe $this sont :" . "<br>";
 		foreach ($this->_listJoueur as $joueur) {
@@ -24,19 +33,14 @@ class Equipe{
 		}
 		return $result;
 	}
-    public function addContrat(){
-        $this ->_contrat[] = $contrat 
-    }
+
+
     public function dispContrat(){
         $result = $this->getEquipe();
         foreach ($this->_contrat as $contrat){
             $result .= $contrat. "<br>";
         }
     }
-
-
-
-
 
     public function __toString()
 	{
@@ -45,7 +49,5 @@ class Equipe{
 
 }
 ?>
-// public function addJoueur($nouveauJoueur){
-//     $this->_joueur[] = $nouveauJoueur;
-// }
+
     
