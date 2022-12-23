@@ -9,9 +9,9 @@ class Nationalite{
     public function getNationalite():string {
         return $this->_nationalite;
     }
-    public function addJoueur($joueur){
-        $this->_joueur[] = $joueur;
-    }
+    // public function addJoueur($joueur){
+    //     $this->_joueur[] = $joueur;
+    // }
     // display Nationaliter des joueurs
     public function dispNationalite(){
         $result ="les joueurs on la Nationalité ".$this. "<br>";
