@@ -41,10 +41,10 @@ class Joueur{
     }
     
 
-    public function addNouveauContrat($nouvEquipe){
-        $this->_contrat[] = $nouvEquipe;
-        return $this;
-    }
+    // public function addNouveauContrat($nouvEquipe){
+    //     $this->_contrat[] = $nouvEquipe;
+    //     return $this;
+    // }
     // Permet de montrer la durée d un contrat d'un joueur
     public function DispContrat(){
         echo $this->getNom(). " ".$this->getPrenom();
