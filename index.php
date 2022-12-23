@@ -17,8 +17,8 @@ $t3 = new Equipe('Real',$p2);
 $t4 = new Equipe('OM',$p1);
 // Joueur
 $j1 = new Joueur('Amrabat','Sofyan',26,$n1,$t3);
-$j2 = new Joueur('Bounou','Yassine',31,$n1,$t3);
-$j3 = new Joueur('Hakimi','Achraf',24,$n2,$t3);
-$j4 = new Joueur('Ziyech','Hakim',29,$n2,$t3);
+// $j2 = new Joueur('Bounou','Yassine',31,$n1,$t3);
+// $j3 = new Joueur('Hakimi','Achraf',24,$n2,$t3);
+// $j4 = new Joueur('Ziyech','Hakim',29,$n2,$t3);
 
 ?>
