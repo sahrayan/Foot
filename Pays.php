@@ -18,13 +18,13 @@ class Pays{
         $this->_equipe[] = $nouvPays;
     }
 // affichage des Pays :
-    public function dispPays(){
-        $result = "L'équipe de $this sont :<br>";
-		foreach ($this->_equipe as $equipe){
-			$result.= $equipe."<br>";
-		}
-		return $result;
-	}
+    // public function dispPays(){
+    //     $result = "L'équipe de $this sont :<br>";
+	// 	foreach ($this->_equipe as $equipe){
+	// 		$result.= $equipe."<br>";
+	// 	}
+	// 	return $result;
+	// }
 // retourne le pays
     public function __toString()
 	{
