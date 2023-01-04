@@ -46,13 +46,13 @@ class Joueur{
     //     return $this;
     // }
     // Permet de montrer la durée d un contrat d'un joueur
-    public function DispContrat(){
-        echo $this->getNom(). " ".$this->getPrenom();
-        foreach($this->_contrat as $contrat){
-            echo "Le joueur ".$contrat->getEquipe()->getNom(). " a un contrat de ".$contrat->getDate()."<br>";
+    // public function DispContrat(){
+    //     echo $this->getNom(). " ".$this->getPrenom();
+    //     foreach($this->_contrat as $contrat){
+    //         echo "Le joueur ".$contrat->getEquipe()->getNom(). " a un contrat de ".$contrat->getDate()."<br>";
             
-        }
-    }
+    //     }
+    // }
     public function __toString()
 	{
 		return $this->_prenom . " " . $this->_nom . " " . $this->_age . " " . $this->_nationalite ;
