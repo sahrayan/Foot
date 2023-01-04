@@ -35,12 +35,12 @@ class Equipe{
 	}
 
 
-    // public function dispContrat(){
-    //     $result = $this->getEquipe();
-    //     foreach ($this->_contrat as $contrat){
-    //         $result .= $contrat. "<br>";
-    //     }
-    // }
+    public function dispContrat(){
+        $result = $this->getEquipe();
+        foreach ($this->_contrat as $contrat){
+            $result .= $contrat. "<br>";
+        }
+    }
 
     public function __toString()
 	{
