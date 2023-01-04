@@ -14,10 +14,10 @@ class Joueur{
         $this->_age = $age;
         // rajout de la nationalite dans add joueur
         $this->_nationalite = $nationalite;
-        $this->_nationalite = addJoueur($this);
+        // $this->_nationalite = addNjoueur($this);
         // je rajoute le l'equipe a new player
         $this->_equipe = $equipe;
-        $this->_equipe = addNjoueur($this);
+        // $this->_equipe = addNjoueur($this);
         // Creation d'une liste contrat 
         $this->_contrat = [];
     }
